@@ -108,6 +108,9 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <div>
+        copyright 2024
+      </div>
     </main>
   );
 }
