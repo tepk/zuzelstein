@@ -44,6 +44,21 @@ body {
   .main {
     color: red;
   }
+  .flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 88px);
+    background: url("../../public/404.png") no-repeat center;
+    background-size: cover;
+    h1 {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 0 40px;
+      font-size: 7rem;
+    }
+  }
   .MuiToolbar-regular {
     background-color: rgba(79, 77, 77, 0.96);
   }
