@@ -20,6 +20,12 @@ body {
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   }
+  .logo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+  }
   .header {
     height: 92px;
     background-color: rgba(79, 77, 77, 0.96);
@@ -27,12 +33,7 @@ body {
     align-items: center;
     padding: 0px 25px;
     box-sizing: border-box;
-    .logo {
-      background-color: #ffffff;
-      border-radius: 50%;
-      width: 64px;
-      height: 64px;
-    }
+
     .logoText {
       font-family: 'roboto', sans-serif;
       font-weight: 300;
@@ -42,5 +43,8 @@ body {
   }
   .main {
     color: red;
+  }
+  .MuiToolbar-regular {
+    background-color: rgba(79, 77, 77, 0.96);
   }
 }

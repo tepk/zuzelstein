@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import styles from "./styles.module.scss";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { NotFoundPage } from "./pages/404/404";
+import { Layout } from "./Layout";
 
-function App() {
-  const [count, setCount] = useState<number>(0);
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      { path: "/", element: <>home</> },
+      { path: "/about", element: <>about</> },
+      { path: "/cart", element: <>cart</> },
+
+      { path: "*", element: <NotFoundPage /> },
+    ],
+  },
+]);
+export default function App() {
   return (
     <>
-      <div className={styles.main}>Hello world!</div>
-      <button onClick={() => setCount((oldV) => oldV + 1)}>
-        click me {count}!
-      </button>
+      <RouterProvider router={router} />
     </>
   );
 }
-
-export default App;
