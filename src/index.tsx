@@ -37,7 +37,7 @@ root.render(
         <span className={styles.logoText}>
           Клининговое Агентство
           <br />
-          Господина Зузельштейна
+          Господина Зузельштейна.
         </span>
       </div>
     </header>
