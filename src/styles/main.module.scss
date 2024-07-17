@@ -26,23 +26,29 @@ body {
     width: 64px;
     height: 64px;
   }
-  .header {
-    height: 92px;
-    background-color: rgba(79, 77, 77, 0.96);
-    display: flex;
-    align-items: center;
-    padding: 0px 25px;
-    box-sizing: border-box;
-
     .logoText {
       font-family: 'roboto', sans-serif;
       font-weight: 300;
       font-size: 1.3rem;
       color: #cbcbcb;
     }
+  .headerWrapper {
+    background-color: rgba(79, 77, 77, 0.96);
   }
-  .main {
-    color: red;
+  .defaultBackground {
+    background-color: rgba(194, 193, 193, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100vh - 88px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      justify-self: start;
+      max-width: 1200px;
+    }
   }
   .flexColumn {
     display: flex;

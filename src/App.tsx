@@ -3,12 +3,13 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NotFoundPage } from "./pages/404/404";
 import { Layout } from "./Layout";
+import { Homepage } from "./pages/home/Homepage";
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      { path: "/", element: <>home</> },
+      { path: "/", element: <Homepage /> },
       { path: "/about", element: <>about</> },
       { path: "/cart", element: <>cart</> },
 
