@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfab6692-570a-4f25-9a5c-e678dafd3d89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OfferCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RowElement.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RowElement.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/RowElement.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/RowElement.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721103217180</updated>
       <workItem from="1721103218291" duration="7689000" />
-      <workItem from="1721197861529" duration="21357000" />
+      <workItem from="1721197861529" duration="21505000" />
     </task>
     <servers />
   </component>

@@ -19,6 +19,7 @@ export default function Header({ router }: { router?: RemixRouter }) {
           aria-controls="menu-appbar"
           aria-haspopup="true"
           color="inherit"
+          href={`/`}
         >
           <img src={`/logo.png`} alt={`Main Logo`} className={styles.logo} />
         </IconButton>
