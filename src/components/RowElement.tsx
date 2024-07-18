@@ -4,6 +4,15 @@ import { useEffect, useState } from "react";
 import { Button, Card } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import rowStyles from "../styles/RowElement.module.scss";
+import bread from "../cardImages/bread.jpeg";
+import floor from "../cardImages/floor.jpeg";
+import hippie from "../cardImages/hippie.jpeg";
+import husband from "../cardImages/husband.jpeg";
+import kitchen from "../cardImages/kitchen.jpeg";
+import mess from "../cardImages/mess.jpeg";
+import student from "../cardImages/student.jpeg";
+import neighbour from "../cardImages/neighbour.jpeg";
+import vegetables from "../cardImages/vegetables.jpeg";
 
 type OffersCard = {
   name: string;
@@ -15,58 +24,66 @@ type OffersCard = {
 const cards: Array<OffersCard> = [
   {
     name: "Бомж-пати",
-    image: "/bread.jpg",
+    image: bread,
     price: "3000",
-    description: "",
+    description: "Три бомжа. Что может быть милее?",
   },
   {
     name: "Натяжные потолки",
-    image: "/floor.jpg",
+    image: floor,
     price: "3850",
-    description: "",
+    description:
+      "У вас натяжные потолки? -- ни слова больше! Наши мастера легко и непринужденно забрызгают их краской, вареньем, соусами на ваш выбор. В цену включен демонтаж двух осветительных приборов с нарушением целостности полотна натяжного потолка.",
   },
   {
     name: "Хиппи",
-    image: "/hippie.jpg",
+    image: hippie,
     price: "4700",
-    description: "",
+    description:
+      "Добавьте вечернике огня! Приведем к вам двух старых вонючих хиппи, которые будут курить самосад и бренчать на расстроенных гитарах, а так же (опционально) приставать к гостям противоположного пола",
   },
 
   {
     name: "Муж на час",
-    image: "/husband.jpg",
+    image: husband,
     price: "3200",
-    description: "",
+    description:
+      "Все лежит на своих местах? Все работает? Наш Муж На Час разберет технику, переложит инструменты в случайные места и оставит после себя творческий беспорядок",
   },
   {
     name: "Общага",
-    image: "/kitchen.jpg",
+    image: kitchen,
     price: "7450",
-    description: "",
-  },
-  {
-    name: "Свинарник",
-    image: "/mess.jpg",
-    price: "3300",
-    description: "",
+    description:
+      "Хочется вдохнуть запах студенческой свободы? Мы легко превратим вашу кухню в аналог общажной. Посуда предоставляется заказиком",
   },
   {
     name: "Студентческая вписка",
-    image: "/student.jpg",
+    image: student,
     price: "2800",
-    description: "",
+    description:
+      "Работы проводятся только ночью. Легкий бардак. Чуть-чуть грустного веселья. Гитара и патлатый гнусавый гитарист в комплекте.",
+  },
+  {
+    name: "Свинарник",
+    image: mess,
+    price: "3300",
+    description:
+      "Студенческая вписка на максималках! Вспоминаем, как оно бывало по утрам? Будет именно так!",
   },
   {
     name: "Неадекватный сосед",
-    image: "/neighbour.jpg",
+    image: neighbour,
     price: "1900",
-    description: "",
+    description:
+      "Гости надоели, но никак не расходятся? Не проблема! Ваш неадекватный сосед выключит вводной автомат квартиры, будет стучать и звонить в дверь, требуя завершения вечеринки, а когда ему откроют -- полезет в драку.",
   },
   {
     name: "Веганство",
-    image: "/vegetables.jpg",
+    image: vegetables,
     price: "1900",
-    description: "",
+    description:
+      "Собрались пожарить шашлык? Толпа веганов развлечет ваших друзей своими неадекватными криками и требованиями прекратить жрать трупы",
   },
 ];
 
@@ -77,7 +94,14 @@ function cellRepeater(arr: Array<OffersCard>) {
       sx={{ width: "350px", height: "420px", borderRadius: "15px" }}
     >
       <img src={el.image} />
-      <h3>{el.name}</h3>
+      <div className={rowStyles.cardHeader}>
+        <h3>{el.name}</h3>
+        <span>{el.price}</span>
+      </div>
+      <div className={rowStyles.cardDescription.replace(" --", " —")}>
+        {el.description}
+      </div>
+      <Button>{el.price}&nbsp;$</Button>
     </Card>
   ));
 }
