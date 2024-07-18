@@ -85,8 +85,19 @@
   width: 48px;
 }
 
+.cardContent {
+  flex-grow: 1;
+  padding: 14px 14px 0 14px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin: 4px 0px;
+  }
+}
+
 div.cardDescription p {
-  font-size: 1em;
+  font-size: 0.925rem;
+  line-height: 1.1rem;
   font-weight: normal;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.87);

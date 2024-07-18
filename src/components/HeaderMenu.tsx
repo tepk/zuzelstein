@@ -58,8 +58,8 @@ export function HeaderMenu() {
         }}
       >
         <MenuList sx={{ width: 320, maxWidth: "100%", padding: 0 }}>
-          {navigationList.map((el) => (
-            <MenuItem>
+          {navigationList.map((el, index) => (
+            <MenuItem key={index}>
               <ListItemIcon>{el.icon}</ListItemIcon>
               <Link to={el.href}>
                 <ListItemText>{el.name}</ListItemText>
