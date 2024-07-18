@@ -20,7 +20,7 @@ export default function Header({ router }: { router?: RemixRouter }) {
           aria-haspopup="true"
           color="inherit"
         >
-          <img src={`./logo.png`} alt={`Main Logo`} className={styles.logo} />
+          <img src={`/logo.png`} alt={`Main Logo`} className={styles.logo} />
         </IconButton>
         <Typography
           variant="h6"

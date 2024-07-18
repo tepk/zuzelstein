@@ -12,7 +12,7 @@ export function Layout() {
           <Outlet />
         </div>
         <div style={{ flexGrow: 1 }} />
-        <small>
+        <small style={{ marginBottom: "10px", display: "block" }}>
           &copy; Клининговое Агентство Господина Зузельштейна, 2018&ndash;
           {calculateCopyright()}
         </small>
